@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles */
+    body {
+      background-color: #f8f9fa; /* Set a light background color */
+    }
+
+    .aboutus-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      margin-top: 10px; /* Increase the margin at the top */
+    }
+
+    .box {
+      width: 800px;
+      height: 370px;
+      background: #121212;
+
+    }
+
+    .box p {
+      padding: 20px; /* Add padding around the <p> content */
+      color: white;
+      font-size: 20px;
+    }
+    .main-quote {
+      font-size: 1.8rem;
+      margin-bottom: 20px; /* Increased margin between main quote and navbar */
+      text-align: center; /* Center-align the text */
+      color: white;
+    }
+
+    .quote-container {
+      margin-top: 100px; /* Increase the margin at the top of the container */
+
+    }
+
+    body {
+      /* Basic dimensions and centering */
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+
+      /* Dark mode colors and gradient */
+      background: #121212; /* Fallback for browsers that don't support gradients */
+      background: linear-gradient(
+              135deg,
+              #121212 25%,
+              #1a1a1a 25%,
+              #1a1a1a 50%,
+              #121212 50%,
+              #121212 75%,
+              #1a1a1a 75%,
+              #1a1a1a
+      );
+      background-size: 40px 40px;
+
+      /* Animation */
+      animation: move 4s linear infinite;
+    }
+
+    @keyframes move {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 40px 40px;
+      }
+
+
+    }
+
+    @keyframes move {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 40px 40px;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <!-- Logo as text -->
+    <a class="navbar-brand mr-auto" href="#">Qutopia</a>
+
+    <!-- Center-aligned -->
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Most Liked Quotes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">New Quotes</a>
+      </li>
+    </ul>
+
+    <!-- Right-aligned -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link mr-3" href="#">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="quote-container">
+  <!-- Main Content -->
+  <div class="quote-container main-quote">
+    <!-- Main Quote -->
+    <p>"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill</p>
+  </div>
+</div>
+
+<div class="aboutus-container">
+
+  <!-- Main Content -->
+
+  <div class="box">
+    <!-- Main Quote -->
+    <p>
+      Velkommen til vores citatverden! Vi tror på kraften af ord og den inspiration, et enkelt citat kan bringe. Vores hjemmeside er en hyldest til den magi, der findes i kloge, inspirerende og tankevækkende citater fra forskellige tidsaldre, kulturer og livsaspekter.
+
+      Vi stræber efter at være din daglige kilde til motivation, refleksion og glæde. Vores passion er at kuratere en samling af citater, der beriger sindet, udfordrer tanker og bringer et smil frem. Vi tror på, at i enhver sætning gemmer der sig potentiel visdom og styrke til at ændre vores syn på verden.
+
+      Vores dedikerede team samler omhyggeligt citater fra ikoniske skikkelser, ukendte forfattere og alt derimellem for at skabe en mangfoldig og inspirerende oplevelse for vores besøgende.
+
+      Dyk ned i vores samling, lad dig fordybe og lad citaterne blive din følgesvend på rejsen gennem livet.
+
+      Tak fordi du er en del af vores citatunivers! </p>
+  </div>
+</div>
+
+</body>
+</html>
