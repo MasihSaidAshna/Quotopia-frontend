@@ -9,42 +9,6 @@
   <style>
     /* Custom styles */
     body {
-      background-color: #f8f9fa; /* Set a light background color */
-    }
-
-    .aboutus-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 50vh;
-      margin-top: 10px; /* Increase the margin at the top */
-    }
-
-    .box {
-      width: 800px;
-      height: 370px;
-      background: #121212;
-
-    }
-
-    .box p {
-      padding: 20px; /* Add padding around the <p> content */
-      color: white;
-      font-size: 20px;
-    }
-    .main-quote {
-      font-size: 1.8rem;
-      margin-bottom: 20px; /* Increased margin between main quote and navbar */
-      text-align: center; /* Center-align the text */
-      color: white;
-    }
-
-    .quote-container {
-      margin-top: 100px; /* Increase the margin at the top of the container */
-
-    }
-
-    body {
       /* Basic dimensions and centering */
       width: 100%;
       height: 100%;
@@ -80,15 +44,41 @@
 
     }
 
-    @keyframes move {
-      0% {
-        background-position: 0 0;
-      }
-      100% {
-        background-position: 40px 40px;
-      }
+    .aboutus-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      margin-top: 10px; /* Increase the margin at the top */
     }
 
+    .box {
+      width: 800px;
+      height: 370px;
+      background: #121212;
+    }
+
+    .box p {
+      padding: 20px; /* Add padding around the <p> content */
+      color: white;
+      font-size: 20px;
+    }
+    .main-quote {
+      font-size: 1.8rem;
+      margin-bottom: 20px; /* Increased margin between main quote and navbar */
+      text-align: center; /* Center-align the text */
+      color: white;
+    }
+
+    .quote-container {
+      margin-top: 100px; /* Increase the margin at the top of the container */
+    }
+
+    /* Bootstrap login/signup modal styles */
+    .modal-content {
+      background-color: #fff;
+      border-radius: 5px;
+    }
 
   </style>
 </head>
@@ -128,10 +118,10 @@
     <!-- Right-aligned -->
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link mr-3" href="#">Login</a>
+        <a class="nav-link mr-3" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Sign Up</a>
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">About us</a>
@@ -140,13 +130,76 @@
   </div>
 </nav>
 
-<!-- jQuery library -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<!-- Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<!-- Bootstrap JavaScript -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- Modal Body - Login Form -->
+      <div class="modal-body">
+        <!-- Your login form goes here -->
+        <!-- Example form: -->
+        <form>
+          <div class="form-group">
+            <label for="loginUsername">Username</label>
+            <input type="text" class="form-control" id="loginUsername" placeholder="Enter username">
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" class="form-control" id="loginPassword" placeholder="Enter password">
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- Modal Body - Signup Form -->
+      <div class="modal-body">
+        <!-- Your signup form goes here -->
+        <!-- Example form: -->
+        <form>
+          <div class="form-group">
+            <label for="signupUsername">Username</label>
+            <input type="text" class="form-control" id="signupUsername" placeholder="Enter username">
+          </div>
+          <div class="form-group">
+            <label for="signupEmail">Email</label>
+            <input type="email" class="form-control" id="signupEmail" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="signupPassword">Password</label>
+            <input type="password" class="form-control" id="signupPassword" placeholder="Enter password">
+          </div>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <div class="quote-container">
   <!-- Main Content -->
