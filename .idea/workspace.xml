@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3663a3f-0f83-432a-9e74-2fa9523a8405" name="Changes" comment="AboutUs.html">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/AboutUs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/signup.html" beforeDir="false" />
+    <list default="true" id="c3663a3f-0f83-432a-9e74-2fa9523a8405" name="Changes" comment="Modal login and signup have been made">
+      <change afterPath="$PROJECT_DIR$/src/mostlikedquotes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/newQuotes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/aboutUs.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701422796048</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Modal login and signup have been made">
+      <created>1701517152723</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701517152723</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +130,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fetch" />
     <MESSAGE value="AboutUs.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="AboutUs.html" />
+    <MESSAGE value="Modal login and signup have been made" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modal login and signup have been made" />
   </component>
 </project>
