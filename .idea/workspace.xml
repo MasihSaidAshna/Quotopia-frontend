@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3663a3f-0f83-432a-9e74-2fa9523a8405" name="Changes" comment="AboutUs.html sign/login gjort flottere">
+    <list default="true" id="c3663a3f-0f83-432a-9e74-2fa9523a8405" name="Changes" comment="ErdalGUIBranch merge">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mostlikedquotes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newQuotes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/aboutUs.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +142,7 @@
     <MESSAGE value="AboutUs.html" />
     <MESSAGE value="Modal login and signup have been made" />
     <MESSAGE value="AboutUs.html sign/login gjort flottere" />
-    <option name="LAST_COMMIT_MESSAGE" value="AboutUs.html sign/login gjort flottere" />
+    <MESSAGE value="ErdalGUIBranch merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="ErdalGUIBranch merge" />
   </component>
 </project>
