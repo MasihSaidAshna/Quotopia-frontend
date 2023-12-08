@@ -6,121 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap CSS CDN -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* Custom styles */
-    body {
-      /* Basic dimensions and centering */
-      width: 100%;
-      height: 100%;
-      justify-content: center;
-      align-items: center;
-
-      /* Dark mode colors and gradient */
-      background: #121212; /* Fallback for browsers that don't support gradients */
-      background: linear-gradient(
-              135deg,
-              #121212 25%,
-              #1a1a1a 25%,
-              #1a1a1a 50%,
-              #121212 50%,
-              #121212 75%,
-              #1a1a1a 75%,
-              #1a1a1a
-      );
-      background-size: 40px 40px;
-
-      /* Animation */
-      animation: move 4s linear infinite;
-    }
-
-    @keyframes move {
-      0% {
-        background-position: 0 0;
-      }
-      100% {
-        background-position: 40px 40px;
-      }
-
-
-    }
-
-    .aboutus-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 50vh;
-      margin-top: 10px; /* Increase the margin at the top */
-    }
-
-    .box {
-      width: 800px;
-      height: 370px;
-      background: #121212;
-    }
-
-    .box p {
-      padding: 20px; /* Add padding around the <p> content */
-      color: white;
-      font-size: 20px;
-    }
-    .main-quote {
-      font-size: 1.8rem;
-      margin-bottom: 20px; /* Increased margin between main quote and navbar */
-      text-align: center; /* Center-align the text */
-      color: white;
-    }
-
-    .quote-container {
-      margin-top: 100px; /* Increase the margin at the top of the container */
-    }
-
-    /* Bootstrap login/signup modal styles */
-    .modal-content {
-
-      width: 100%;
-      height: 100%;
-      justify-content: center;
-      align-items: center;
-
-      /* Dark mode colors and gradient */
-      background: #121212; /* Fallback for browsers that don't support gradients */
-      background: linear-gradient(
-              135deg,
-              #121212 25%,
-              #1a1a1a 25%,
-              #1a1a1a 50%,
-              #121212 50%,
-              #121212 75%,
-              #1a1a1a 75%,
-              #1a1a1a
-      );
-      background-size: 40px 40px;
-
-      /* Animation */
-      animation: move 4s linear infinite;
-    }
-
-    @keyframes move {
-      0% {
-        background-position: 0 0;
-      }
-      100% {
-        background-position: 40px 40px;
-      }
-
-
-    }
-
-    .form-group {
-      color: white;
-    }
-
-    .modal-title {
-      color: white;
-    }
-
-
-  </style>
+  <link href="css/aboutus.css" rel="stylesheet">
 </head>
 <body>
 
@@ -132,14 +18,16 @@
     <!-- Center-aligned -->
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="index.html">Homei</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="mostlikedquotes.html">Most Liked Quotes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="newQuotes.html">New Quotes</a>
+        <a class="nav-link" href="newquotes.html">New Quotes</a>
       </li>
+
+
       <!-- Dropdown within navbar -->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -164,7 +52,7 @@
         <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="aboutUs.html">About us</a>
+        <a class="nav-link" href="aboutus.html">About us</a>
       </li>
     </ul>
   </div>
@@ -187,12 +75,14 @@
         <!-- Example form: -->
         <form>
           <div class="form-group">
-            <label for="loginUsername">Username</label>
-            <input type="text" class="form-control" id="loginUsername" placeholder="Enter username">
+            <label for="loginEmail">Username</label>
+            <input type="email" class="form-control" id="loginEmail" name="email" required>
+
           </div>
           <div class="form-group">
             <label for="loginPassword">Password</label>
-            <input type="password" class="form-control" id="loginPassword" placeholder="Enter password">
+            <input type="password" class="form-control" id="loginPassword" name="password" required>
+
           </div>
           <button type="submit" class="btn btn-primary">Login</button>
         </form>
@@ -219,15 +109,16 @@
         <form>
           <div class="form-group">
             <label for="signupUsername">Username</label>
-            <input type="text" class="form-control" id="signupUsername" placeholder="Enter username">
+            <input type="text" class="form-control" id="signupUsername" required>
           </div>
           <div class="form-group">
             <label for="signupEmail">Email</label>
-            <input type="email" class="form-control" id="signupEmail" placeholder="Enter email">
+            <input type="email" class="form-control" id="signupEmail" required>
           </div>
           <div class="form-group">
             <label for="signupPassword">Password</label>
-            <input type="password" class="form-control" id="signupPassword" placeholder="Enter password">
+            <input type="password" class="form-control" id="signupPassword" required>
+
           </div>
           <button type="submit" class="btn btn-primary">Sign Up</button>
         </form>
@@ -255,7 +146,7 @@
 
   <div class="box">
     <!-- Main Quote -->
-    <p>
+    <main>
       Velkommen til vores citatverden! Vi tror på kraften af ord og den inspiration, et enkelt citat kan bringe. Vores hjemmeside er en hyldest til den magi, der findes i kloge, inspirerende og tankevækkende citater fra forskellige tidsaldre, kulturer og livsaspekter.
 
       Vi stræber efter at være din daglige kilde til motivation, refleksion og glæde. Vores passion er at kuratere en samling af citater, der beriger sindet, udfordrer tanker og bringer et smil frem. Vi tror på, at i enhver sætning gemmer der sig potentiel visdom og styrke til at ændre vores syn på verden.
@@ -264,9 +155,26 @@
 
       Dyk ned i vores samling, lad dig fordybe og lad citaterne blive din følgesvend på rejsen gennem livet.
 
-      Tak fordi du er en del af vores citatunivers! </p>
+      Tak fordi du er en del af vores citatunivers! </main>
   </div>
 </div>
+
+<!-- Start of footer -->
+
+
+<footer class="footer">
+  <div class="container text-center">
+    <span>&copy; 2023 Quotopia</span>
+  </div>
+</footer>
+
+<!-- End of footer -->
+
+
+</body>
+</html>
+
+
 
 </body>
 </html>

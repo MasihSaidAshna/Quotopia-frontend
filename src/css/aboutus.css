@@ -1,0 +1,123 @@
+/* Custom styles */
+body {
+    /* Basic dimensions and centering */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    /* Dark mode colors and gradient */
+    background: #121212; /* Fallback for browsers that don't support gradients */
+    background: linear-gradient(
+            135deg,
+            #121212 25%,
+            #1a1a1a 25%,
+            #1a1a1a 50%,
+            #121212 50%,
+            #121212 75%,
+            #1a1a1a 75%,
+            #1a1a1a
+    );
+    background-size: 40px 40px;
+
+    /* Animation */
+    animation: move 4s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 40px 40px;
+    }
+
+
+}
+
+.aboutus-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: 10px; /* Increase the margin at the top */
+}
+
+.box {
+    width: 800px;
+    height: 370px;
+    background: #121212;
+}
+
+.box main {
+    padding: 20px; /* Add padding around the <p> content */
+    color: white;
+    font-size: 20px;
+}
+.main-quote {
+    font-size: 1.8rem;
+    margin-bottom: 20px; /* Increased margin between main quote and navbar */
+    text-align: center; /* Center-align the text */
+    color: white;
+}
+
+.quote-container {
+    margin-top: 100px; /* Increase the margin at the top of the container */
+}
+
+/* Bootstrap login/signup modal styles */
+.modal-content {
+
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    /* Dark mode colors and gradient */
+    background: #121212; /* Fallback for browsers that don't support gradients */
+    background: linear-gradient(
+            135deg,
+            #121212 25%,
+            #1a1a1a 25%,
+            #1a1a1a 50%,
+            #121212 50%,
+            #121212 75%,
+            #1a1a1a 75%,
+            #1a1a1a
+    );
+    background-size: 40px 40px;
+
+    /* Animation */
+    animation: move 4s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 40px 40px;
+    }
+
+
+}
+
+.form-group {
+    color: white;
+}
+
+.modal-title {
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Height of your footer */
+    line-height: 60px; /* Center content vertically */
+    background-color: #343a40; /* Dark background color */
+    color: white;
+}
+
+
