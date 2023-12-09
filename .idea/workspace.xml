@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c3663a3f-0f83-432a-9e74-2fa9523a8405" name="Changes" comment="ErdalGUIBranch merge">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/aboutus.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/aboutus.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/mostlikedquotes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/mostlikedquotes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/newquotes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/newquotes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mostlikedquotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/mostlikedquotes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/newquotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/newquotes.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +149,7 @@
     <MESSAGE value="Modal login and signup have been made" />
     <MESSAGE value="AboutUs.html sign/login gjort flottere" />
     <MESSAGE value="ErdalGUIBranch merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="ErdalGUIBranch merge" />
+    <MESSAGE value="Example på UI change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Example på UI change" />
   </component>
 </project>
