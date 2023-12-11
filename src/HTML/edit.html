@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quote Management - CRUD</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container mt-5">
+    <h1>Quote Management - CRUD</h1>
+
+    <!-- Form to add a new quote -->
+    <div class="card p-4">
+        <h2>Add New Quote</h2>
+        <form id="quoteForm">
+            <div class="form-group">
+                <label for="quoteInput">Quote:</label>
+                <input class="form-control" id="quoteInput" placeholder="Enter a quote" required type="text">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="authorIdInput">Author ID:</label>
+                    <input class="form-control" id="authorIdInput" placeholder="Enter author ID" required type="text">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="authorNameInput">Author Name:</label>
+                    <input class="form-control" id="authorNameInput" placeholder="Enter author name" required
+                           type="text">
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Add Quote</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <h2>Quotes</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Quote</th>
+            <th>Author</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="quoteTableBody">
+        <!-- Quote rows will be dynamically added here -->
+        </tbody>
+    </table>
+</div>
+
+
+</body>
+</html>

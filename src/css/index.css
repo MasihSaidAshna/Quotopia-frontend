@@ -1,0 +1,38 @@
+/* Custom styles */
+body {
+    background-color: #f8f9fa; /* Set a light background color */
+}
+
+.quote-container {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.main-quote {
+    font-size: 1.8rem;
+    margin-bottom: 40px; /* Increased margin between main quote and navbar */
+}
+
+.small-quote {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.qutopia-description {
+    color: #555;
+}
+
+.search-box {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.quote-text {
+    font-style: italic;
+    color: #333; /* Change the text color to your preference */
+    /* Add any other styles you want to apply to the quotes */
+}

@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3663a3f-0f83-432a-9e74-2fa9523a8405" name="Changes" comment="ErdalGUIBranch merge">
+      <change afterPath="$PROJECT_DIR$/src/HTML/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsScript/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsScript/edit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/aboutus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/aboutus.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/aboutus.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/mostlikedquotes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/mostlikedquotes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/newquotes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/newquotes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mostlikedquotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/mostlikedquotes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/newquotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/newquotes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Javascript/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsScript/Test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Javascript/TestSide.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Javascript/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTML/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mostlikedquotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTML/mostlikedquotes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/newquotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/HTML/newquotes.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -37,24 +42,29 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
   <component name="ProjectId" id="2YX3UVu6dramWf6LAYHODNNVQSO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\MC401\IdeaProjects\Quotopia-frontend\src\" />
@@ -76,6 +86,7 @@
       <workItem from="1701426945301" duration="88000" />
       <workItem from="1701428662830" duration="614000" />
       <workItem from="1701430136797" duration="746000" />
+      <workItem from="1702246506478" duration="9028000" />
     </task>
     <task id="LOCAL-00001" summary="fetch">
       <created>1701182483813</created>
@@ -149,7 +160,18 @@
     <MESSAGE value="Modal login and signup have been made" />
     <MESSAGE value="AboutUs.html sign/login gjort flottere" />
     <MESSAGE value="ErdalGUIBranch merge" />
-    <MESSAGE value="Example på UI change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Example på UI change" />
+    <option name="LAST_COMMIT_MESSAGE" value="ErdalGUIBranch merge" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/jsScript/Login.js</url>
+          <line>47</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
