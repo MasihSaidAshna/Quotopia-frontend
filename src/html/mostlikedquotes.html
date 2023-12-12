@@ -14,51 +14,48 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <!-- Logo as text -->
-        <a class="navbar-brand mr-auto" href="index.html">Quotopia</a>
+        <a class="navbar-brand mr-auto" href="../index.html">Quotopia</a>
 
         <!-- Center-aligned -->
         <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="mostlikedquotes.html">Most Liked Quotes</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="newquotes.html">New Quotes</a>
             </li>
-
-
-            <!-- Dropdown within navbar -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
+                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href="#"
+                   id="navbarDropdown" role="button">
                     Categories
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div aria-labelledby="navbarDropdown" class="dropdown-menu">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Love</a>
                     <a class="dropdown-item" href="#">Horror</a>
                 </div>
             </li>
-            <!-- End of dropdown -->
         </ul>
 
         <!-- Right-aligned -->
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link mr-3" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                <a class="nav-link" href="contact.html">Contact</a>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a>
+                <a class="nav-link" data-target="#signupModal" data-toggle="modal" href="#">Sign Up</a>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About us</a>
+                <a class="nav-link mr-3" data-target="#loginModal" data-toggle="modal" href="#">Login</a>
             </li>
+
         </ul>
     </div>
 </nav>
-
 <!-- Login Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -113,10 +110,7 @@
                         <label for="signupUsername">Username</label>
                         <input type="text" class="form-control" id="signupUsername" required>
                     </div>
-                    <div class="form-group">
-                        <label for="signupEmail">Email</label>
-                        <input type="email" class="form-control" id="signupEmail" required>
-                    </div>
+
                     <div class="form-group">
                         <label for="signupPassword">Password</label>
                         <input type="password" class="form-control" id="signupPassword" required>
@@ -128,11 +122,6 @@
         </div>
     </div>
 </div>
-
-<!-- Bootstrap JavaScript -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
 <div class="quote-container">
     <!-- Main Content -->
@@ -163,7 +152,10 @@
 </footer>
 
 <!-- End of footer -->
-
-
 </body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="../js/login.js"></script>
 </html>

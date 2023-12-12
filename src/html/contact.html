@@ -2,12 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>New Quotes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS CDN -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/newquotes.css" rel="stylesheet">
-
+    <title>contact us</title>
 </head>
 <body>
 
@@ -56,7 +51,6 @@
         </ul>
     </div>
 </nav>
-
 <!-- Login Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -74,12 +68,14 @@
                 <!-- Example form: -->
                 <form>
                     <div class="form-group">
-                        <label for="loginUsername">Username</label>
-                        <input type="text" class="form-control" id="loginUsername" placeholder="Enter username">
+                        <label for="loginEmail">Username</label>
+                        <input type="email" class="form-control" id="loginEmail" name="email" required>
+
                     </div>
                     <div class="form-group">
                         <label for="loginPassword">Password</label>
-                        <input type="password" class="form-control" id="loginPassword" placeholder="Enter password">
+                        <input type="password" class="form-control" id="loginPassword" name="password" required>
+
                     </div>
                     <button type="submit" class="btn btn-primary">Login</button>
                 </form>
@@ -87,6 +83,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- Signup Modal -->
 <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
@@ -106,11 +103,13 @@
                 <form>
                     <div class="form-group">
                         <label for="signupUsername">Username</label>
-                        <input type="text" class="form-control" id="signupUsername" placeholder="Enter username">
+                        <input type="text" class="form-control" id="signupUsername" required>
                     </div>
+
                     <div class="form-group">
                         <label for="signupPassword">Password</label>
-                        <input type="password" class="form-control" id="signupPassword" placeholder="Enter password">
+                        <input type="password" class="form-control" id="signupPassword" required>
+
                     </div>
                     <button type="submit" class="btn btn-primary">Sign Up</button>
                 </form>
@@ -119,41 +118,13 @@
     </div>
 </div>
 
-
-<div class="quote-container">
-    <!-- Main Content -->
-    <div class="quote-container main-quote">
-        <!-- Main Quote -->
-        <p> This week's new quote is:</p>
-    </div>
-</div>
-
-<div class="aboutus-container">
-
-    <!-- Main Content -->
-
-    <div class="box">
-        <!-- Main Quote -->
-        <p>
-            bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
-    </div>
-</div>
-
-<!-- Start of footer -->
-
-
-<footer class="footer">
-    <div class="container text-center">
-        <span>&copy; 2023 Quotopia</span>
-    </div>
-</footer>
-
-<!-- End of footer -->
+<h1>
+    contact page
+</h1>
 </body>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="../js/login.js"></script>
-
-
 </html>
