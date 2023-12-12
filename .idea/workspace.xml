@@ -4,8 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3663a3f-0f83-432a-9e74-2fa9523a8405" name="Changes" comment="Crud update">
+    <list default="true" id="c3663a3f-0f83-432a-9e74-2fa9523a8405" name="Changes" comment="aboutus kiggede lidt på login/signup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HTML/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HTML/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HTML/mostlikedquotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/mostlikedquotes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HTML/newquotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/newquotes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/aboutus.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/aboutus.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/edit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/mostlikedquotes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/mostlikedquotes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/newquotes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/newquotes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jsScript/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jsScript/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jsScript/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/edit.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,22 +49,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MC401\IdeaProjects\Quotopia-frontend\src\html" />
       <recent name="C:\Users\MC401\IdeaProjects\Quotopia-frontend\src\" />
     </key>
   </component>
@@ -71,6 +85,8 @@
       <workItem from="1701426945301" duration="88000" />
       <workItem from="1701428662830" duration="614000" />
       <workItem from="1701430136797" duration="746000" />
+      <workItem from="1702380950964" duration="145000" />
+      <workItem from="1702381098359" duration="3478000" />
     </task>
     <task id="LOCAL-00001" summary="fetch">
       <created>1701182483813</created>

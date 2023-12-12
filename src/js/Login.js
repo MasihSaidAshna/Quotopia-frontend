@@ -31,7 +31,7 @@ function loginUser(username, password) {
             // Handle the response, e.g., save the token to local storage
             console.log('Login successful:', data);
             localStorage.setItem('token', data.token);
-            window.location.href = '../HTML/newquotes.html';
+            window.location.href = '../html/newquotes.html';
         })
         .catch(error => console.error('Login failed:', error));
 }
