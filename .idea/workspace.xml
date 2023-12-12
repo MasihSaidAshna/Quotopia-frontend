@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3663a3f-0f83-432a-9e74-2fa9523a8405" name="Changes" comment="aboutus kiggede lidt på login/signup">
+    <list default="true" id="c3663a3f-0f83-432a-9e74-2fa9523a8405" name="Changes" comment="Crud update">
+      <change afterPath="$PROJECT_DIR$/src/js/searchbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsScript/searchBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HTML/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/aboutus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HTML/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HTML/mostlikedquotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/mostlikedquotes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HTML/newquotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/newquotes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/aboutus.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/aboutus.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/edit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/mostlikedquotes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/mostlikedquotes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/newquotes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/newquotes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jsScript/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jsScript/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jsScript/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>

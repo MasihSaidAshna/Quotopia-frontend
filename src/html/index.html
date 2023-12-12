@@ -9,6 +9,7 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/index.css" rel="stylesheet">
 
+
 </head>
 
 <body>
@@ -139,6 +140,7 @@
   </div>
 
   <!-- Search Bar -->
+  <!-- Search Bar -->
   <div class="row justify-content-center search-box">
     <div class="col-md-6">
       <!-- Search Form -->
@@ -148,19 +150,15 @@
           <div class="input-group-prepend">
             <!-- Dropdown button -->
             <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Category One</a>
-              <a class="dropdown-item" href="#">Category Two</a>
-              <a class="dropdown-item" href="#">Category Three</a>
-              <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated Category</a>
+            <div class="dropdown-menu" id="genreDropdown">
+              <!-- Genre items will be populated dynamically -->
             </div>
           </div>
           <!-- Search input -->
-          <input type="text" class="form-control" aria-label="Search input with dropdown button">
+          <input type="text" class="form-control" aria-label="Search input with dropdown button" id="searchInput">
           <!-- Search button -->
           <div class="input-group-append">
-            <button class="btn btn-success" type="button">Search</button>
+            <button class="btn btn-success" type="button" onclick="search()">Search</button>
           </div>
         </div>
       </form>
@@ -207,5 +205,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
-
+<script src="../js/searchbar.js"></script>
+<script src="../js/Login.js"></script>
+<script src="../js/Test.js"></script>
 </html>
