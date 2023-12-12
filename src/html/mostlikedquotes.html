@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Most liked quotes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- Bootstrap CSS CDN -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/mostlikedquotes.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="../js/login.js"></script>
 
 </head>
 <body>
@@ -31,11 +36,12 @@
 
             <!-- Dropdown within navbar -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
+                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href="#"
+                   id="navbarDropdown" role="button">
                     Categories
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div aria-labelledby="navbarDropdown" class="dropdown-menu">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Love</a>
                     <a class="dropdown-item" href="#">Horror</a>
@@ -47,10 +53,10 @@
         <!-- Right-aligned -->
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link mr-3" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                <a class="nav-link mr-3" data-target="#loginModal" data-toggle="modal" href="#">Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a>
+                <a class="nav-link" data-target="#signupModal" data-toggle="modal" href="#">Sign Up</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="aboutus.html">About us</a>
@@ -60,13 +66,13 @@
 </nav>
 
 <!-- Login Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+<div aria-hidden="true" aria-labelledby="loginModalLabel" class="modal fade" id="loginModal" role="dialog" tabindex="-1">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <!-- Modal Header -->
             <div class="modal-header">
                 <h5 class="modal-title" id="loginModalLabel">Login</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -74,18 +80,16 @@
             <div class="modal-body">
                 <!-- Your login form goes here -->
                 <!-- Example form: -->
-                <form>
+                <form id="loginForm">
                     <div class="form-group">
-                        <label for="loginEmail">Username</label>
-                        <input type="email" class="form-control" id="loginEmail" name="email" required>
-
+                        <label for="loginUsername">Username</label>
+                        <input class="form-control" id="loginUsername" placeholder="Enter username" type="text">
                     </div>
                     <div class="form-group">
                         <label for="loginPassword">Password</label>
-                        <input type="password" class="form-control" id="loginPassword" name="password" required>
-
+                        <input class="form-control" id="loginPassword" placeholder="Enter password" type="password">
                     </div>
-                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button class="btn btn-primary" type="submit">Login</button>
                 </form>
             </div>
         </div>
@@ -94,13 +98,14 @@
 
 
 <!-- Signup Modal -->
-<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+<div aria-hidden="true" aria-labelledby="signupModalLabel" class="modal fade" id="signupModal" role="dialog"
+     tabindex="-1">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <!-- Modal Header -->
             <div class="modal-header">
                 <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -108,31 +113,26 @@
             <div class="modal-body">
                 <!-- Your signup form goes here -->
                 <!-- Example form: -->
-                <form>
+                <form id="signupForm">
                     <div class="form-group">
                         <label for="signupUsername">Username</label>
-                        <input type="text" class="form-control" id="signupUsername" required>
+                        <input class="form-control" id="signupUsername" placeholder="Enter username" type="text">
                     </div>
-                    <div class="form-group">
-                        <label for="signupEmail">Email</label>
-                        <input type="email" class="form-control" id="signupEmail" required>
-                    </div>
+
                     <div class="form-group">
                         <label for="signupPassword">Password</label>
-                        <input type="password" class="form-control" id="signupPassword" required>
-
+                        <input class="form-control" id="signupPassword" placeholder="Enter password" type="password">
                     </div>
-                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                    <button class="btn btn-primary" type="submit">Sign Up</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
 
+
 <!-- Bootstrap JavaScript -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
 
 <div class="quote-container">
     <!-- Main Content -->

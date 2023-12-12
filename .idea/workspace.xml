@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3663a3f-0f83-432a-9e74-2fa9523a8405" name="Changes" comment="layout done">
+    <list default="true" id="c3663a3f-0f83-432a-9e74-2fa9523a8405" name="Changes" comment="Crud update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/aboutus.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/aboutus.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/edit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/newquotes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/newquotes.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/mostlikedquotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/mostlikedquotes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/newquotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/newquotes.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -57,7 +58,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\MC401\IdeaProjects\Quotopia-frontend\src\html" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="C:\Users\MC401\IdeaProjects\Quotopia-frontend\src\" />
     </key>
   </component>
@@ -77,9 +78,6 @@
       <workItem from="1701426945301" duration="88000" />
       <workItem from="1701428662830" duration="614000" />
       <workItem from="1701430136797" duration="746000" />
-      <workItem from="1702380950964" duration="145000" />
-      <workItem from="1702381098359" duration="7180000" />
-      <workItem from="1702389425766" duration="605000" />
     </task>
     <task id="LOCAL-00001" summary="fetch">
       <created>1701182483813</created>
@@ -144,14 +142,7 @@
       <option name="project" value="LOCAL" />
       <updated>1702317959872</updated>
     </task>
-    <task id="LOCAL-00010" summary="layout done">
-      <created>1702384713201</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1702384713201</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +167,6 @@
     <MESSAGE value="ErdalGUIBranch merge" />
     <MESSAGE value="Example på UI change" />
     <MESSAGE value="Crud update" />
-    <MESSAGE value="layout done" />
-    <option name="LAST_COMMIT_MESSAGE" value="layout done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Crud update" />
   </component>
 </project>
