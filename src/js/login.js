@@ -26,11 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
 function loginUser(username, password) {
     // Make a fetch request to your login endpoint
     fetch('http://localhost:8080/login', {
-        method: 'POST',
-        headers: {
+        method: 'POST', headers: {
             'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, password }),
+        }, body: JSON.stringify({username, password}),
     })
         .then(response => response.json())
         .then(data => {
@@ -44,18 +42,16 @@ function loginUser(username, password) {
             updateNavigationBar(true);
         })
         .catch(error => console.error('Login failed:', error));
+    alert('Login failed. Please check your username and password.');
 }
 
 function signupUser(username, password) {
     const authToken = localStorage.getItem('token');
 
     fetch('http://localhost:8080/signup', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer ' + authToken,
-        },
-        body: JSON.stringify({ username, password }),
+        method: 'POST', headers: {
+            'Content-Type': 'application/json', 'Authorization': 'Bearer ' + authToken,
+        }, body: JSON.stringify({username, password}),
     })
         .then(response => {
             if (!response.ok) {
@@ -83,7 +79,7 @@ function updateNavigationBar(isLoggedIn) {
     if (isLoggedIn) {
         // User is logged in, update the navigation bar
         rightNavLinks.forEach(link => link.style.display = 'none');
-        authLinks.innerHTML = '<li class="nav-item"><a class="nav-link" href="#" onclick="logoutUser()">Sign Out</a></li>';
+        authLinks.innerHTML = '<li class="nav-item"><a class="nav-link" href="#" style="color: red; font-weight: bolder"  onclick="logoutUser()">Sign Out</a></li>';
         leftNavLinks.forEach(link => link.style.display = 'inline-block');
 
         // Add the new page link for logged-in users
@@ -91,8 +87,7 @@ function updateNavigationBar(isLoggedIn) {
     } else {
         // User is not logged in, restore the original navigation bar
         rightNavLinks.forEach(link => link.style.display = 'inline-block');
-        authLinks.innerHTML = '<li class="nav-item"><a class="nav-link mr-3" data-target="#loginModal" data-toggle="modal" href="#">Login</a></li>' +
-            '<li class="nav-item"><a class="nav-link" data-target="#signupModal" data-toggle="modal" href="#">Sign Up</a></li>'
+        authLinks.innerHTML = '<li class="nav-item"><a class="nav-link mr-3" data-target="#loginModal" data-toggle="modal" href="#">Login</a></li>' + '<li class="nav-item"><a class="nav-link" data-target="#signupModal" data-toggle="modal" href="#">Sign Up</a></li>'
         leftNavLinks.forEach(link => link.style.display = 'none');
 
         // Remove the new page link for non-logged-in users
