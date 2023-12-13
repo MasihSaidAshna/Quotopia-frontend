@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="container mt-5">
-    <h1>Admin panel</h1>
+    <h1 class="admin-panel-header"> Admin panel</h1>
 
     <div class="card p-4">
         <h2>Add New Quote</h2>
@@ -93,7 +93,7 @@
 
     <!-- Login Modal -->
     <div aria-hidden="true" aria-labelledby="loginModalLabel" class="modal fade" id="loginModal" role="dialog" tabindex="-1">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog custom-center-modal" role="document">
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
@@ -125,7 +125,7 @@
     <!-- Signup Modal -->
     <div aria-hidden="true" aria-labelledby="signupModalLabel" class="modal fade" id="signupModal" role="dialog"
          tabindex="-1">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog custom-center-modal" role="document">
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
@@ -239,7 +239,7 @@
 
             const rows = quotes.map(quote => {
                 return `
-        <tr>
+        <tr class="white-text">
           <td>${quote.quoteID}</td>
           <td>${quote.quoteText}</td>
           <td>${quote.author ? quote.author.authorName : ''}</td>

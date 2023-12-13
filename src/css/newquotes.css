@@ -125,3 +125,16 @@ body {
     color: white;
 
 }
+
+.custom-center-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* This ensures that the container takes the full viewport height */
+}
+
+.custom-center-modal .modal {
+    display: flex;
+    align-items: center;
+
+}
