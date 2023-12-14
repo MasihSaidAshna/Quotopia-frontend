@@ -52,3 +52,5 @@ function navigateToQuotesPage(genreID) {
 }
 
 
+
+
