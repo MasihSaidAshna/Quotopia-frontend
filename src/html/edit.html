@@ -58,22 +58,6 @@
                     <a class="nav-link" href="newquotes.html">New Quotes</a>
                 </li>
 
-
-                <!-- Dropdown within navbar -->
-                <li class="nav-item dropdown">
-                    <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
-                       data-toggle="dropdown"
-                       href="#"
-                       id="navbarDropdown" role="button">
-                        Categories
-                    </a>
-                    <div aria-labelledby="navbarDropdown" class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Love</a>
-                        <a class="dropdown-item" href="#">Horror</a>
-                    </div>
-                </li>
-                <!-- End of dropdown -->
             </ul>
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
@@ -81,85 +65,12 @@
                 </li>
             </ul>
 
-            <!-- Right-aligned -->
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link mr-3" data-target="#loginModal" data-toggle="modal" href="#"
-                       style="color: lightblue">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-target="#signupModal" data-toggle="modal" href="#">Sign Up</a>
-                </li>
-
+            <ul class="navbar-nav ml-auto" id="loggedInLinks">
+                <!-- This will be populated dynamically when the user is logged in -->
             </ul>
+
         </div>
     </nav>
-
-    <!-- Login Modal -->
-    <div aria-hidden="true" aria-labelledby="loginModalLabel" class="modal fade" id="loginModal" role="dialog"
-         tabindex="-1">
-        <div class="modal-dialog custom-center-modal" role="document">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
-                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!-- Modal Body - Login Form -->
-                <div class="modal-body">
-                    <!-- Your login form goes here -->
-                    <!-- Example form: -->
-                    <form id="loginForm">
-                        <div class="form-group">
-                            <label for="loginUsername">Username</label>
-                            <input class="form-control" id="loginUsername" placeholder="Enter username" type="text">
-                        </div>
-                        <div class="form-group">
-                            <label for="loginPassword">Password</label>
-                            <input class="form-control" id="loginPassword" placeholder="Enter password" type="password">
-                        </div>
-                        <button class="btn btn-primary" type="submit">Login</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Signup Modal -->
-    <div aria-hidden="true" aria-labelledby="signupModalLabel" class="modal fade" id="signupModal" role="dialog"
-         tabindex="-1">
-        <div class="modal-dialog custom-center-modal" role="document">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
-                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!-- Modal Body - Signup Form -->
-                <div class="modal-body">
-                    <!-- Your signup form goes here -->
-                    <!-- Example form: -->
-                    <form id="signupForm">
-                        <div class="form-group">
-                            <label for="signupUsername">Username</label>
-                            <input class="form-control" id="signupUsername" placeholder="Enter username" type="text">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="signupPassword">Password</label>
-                            <input class="form-control" id="signupPassword" placeholder="Enter password"
-                                   type="password">
-                        </div>
-                        <button class="btn btn-primary" type="submit">Sign Up</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <h2>Quotes</h2>
