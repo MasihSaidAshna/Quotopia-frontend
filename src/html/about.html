@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en da">
+<html lang="en da" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>About us</title>
@@ -49,8 +49,14 @@
             <!-- End of dropdown -->
         </ul>
 
-        <!-- Right-aligned -->
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="about.html"
+                   style="font-size : 20px; color: black; font-weight: bolder;">About</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav mr-auto" id="authLinks">
             <li class="nav-item">
                 <a class="nav-link mr-3" data-target="#loginModal" data-toggle="modal" href="#"
                    style="color: lightblue">Login</a>
@@ -58,15 +64,19 @@
             <li class="nav-item">
                 <a class="nav-link" data-target="#signupModal" data-toggle="modal" href="#">Sign Up</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html" style="font-size : 20px; color: black; font-weight: bolder">About
-                </a>
-            </li>
+
         </ul>
+
+        <ul class="navbar-nav ml-auto" id="loggedInLinks">
+            <!-- This will be populated dynamically when the user is logged in -->
+        </ul>
+
+
     </div>
 </nav>
 
-!-- Login Modal -->
+
+<!-- Login Modal -->
 <div aria-hidden="true" aria-labelledby="loginModalLabel" class="modal fade" id="loginModal" role="dialog"
      tabindex="-1">
     <div class="modal-dialog custom-center-modal" role="document">
@@ -75,7 +85,7 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="loginModalLabel">Login</h5>
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true" class="btn btn-primary" style="font-size: small; font-weight: bold">&times;</span>
                 </button>
             </div>
             <!-- Modal Body - Login Form -->
@@ -107,7 +117,7 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true" class="btn btn-primary" style="font-size: small; font-weight: bold">&times;</span>
                 </button>
             </div>
             <!-- Modal Body - Signup Form -->
@@ -131,63 +141,67 @@
     </div>
 </div>
 
+
 <section style="margin-bottom: 5%">
     <div class="body-text">
-        <div class="title">Cemil Özdemir Quotiopia WebPage info:</div>
+        <div class="title">Quotiopia WebPage info:</div>
 
         <div style="font-size: medium; color: white">
             <p>
-            <h3>Velkommen til Quotipia </h3>
-            Velkommen til vores citatverden! Vi tror på kraften af ord og den inspiration, et enkelt citat kan bringe.
-            Vores hjemmeside er en hyldest til den magi, der findes i kloge, inspirerende og tankevækkende citater fra
-            forskellige tidsaldre, kulturer og livsaspekter. Vi stræber efter at være din daglige kilde til motivation,
-            refleksion og glæde. Vores passion er at kratere en samling af citater, der beriger sindet, udfordrer
-            tanker og bringer et smil frem. Vi tror på, at i enhver sætning gemmer der sig potentiel visdom og styrke
-            til at ændre vores syn på verden. Vores dedikerede team samler omhyggeligt citater fra ikoniske skikkelser,
-            ukendte forfattere og alt derimellem for at skabe en mangfoldig og inspirerende oplevelse for vores
-            besøgende. Dyk ned i vores samling, lad dig fordybe og lad citaterne blive din følgesvend på rejsen gennem
-            livet. Tak fordi du er en del af vores citatunivers!
+            <h3>Welcome to Quotipia </h3>
+            Welcome to our world of quotes! We believe in the power of words and the inspiration a single quote can
+            bring.
+            Our website is a tribute to the magic found in wise, inspiring, and thought-provoking quotes from
+            different eras, cultures, and aspects of life. We aspire to be your daily source of motivation,
+            reflection, and joy. Our passion is to curate a collection of quotes that enrich the mind, challenge
+            thoughts, and bring a smile. We believe that in every sentence lies potential wisdom and strength
+            to change our perspective on the world. Our dedicated team carefully gathers quotes from iconic figures,
+            unknown authors, and everything in between to create a diverse and inspiring experience for our visitors.
+            Dive into our collection, immerse yourself, and let the quotes be your companion on the journey through
+            life. Thank you for being a part of our quote universe!
 
             <br>
             <br>
-            <h3>Vores historie</h3>
-            Quotopia har en rig historie, der strækker sig over årtier. Fra vores beskedne begyndelse som en klassisk
-            Instagram-konto
-            til en moderne hjemmeside. Gennem årene har vi konsekvent tilpasset os de seneste teknologiske fremskridt
-            og trends i citatindustrien for at sikre, at vores læsere har den bedst mulige læseoplevelse.
+            <h3>Our History</h3>
+            Quotopia has a rich history that spans decades. From our humble beginnings as a classic Instagram account
+            to a modern website. Over the years, we have consistently adapted to the latest technological advances
+            and trends in the quote industry to ensure that our readers have the best possible reading experience.
             <br>
             <br>
 
-            <h3>Vores Vision</h3>
-            Vores vision er at skabe et rum, hvor citatentusiaster i alle aldre kan fordybe sig i citaternes magi.
-            Vi tror på citaters kraft til at underholde, inspirere og forbinde mennesker, og vi er stolte af at
-            give vores fællesskab en platform til at opleve denne magi. Vi arbejder konstant på at udvide vores
-            citatudvalg,
-            forbedre teknologien på vores hjemmeside og skabe en atmosfære, der føles som et andet hjem for
-            vores besøgende.
+            <h3>Our Vision</h3>
+            Our vision is to create a space where quote enthusiasts of all ages can immerse themselves in the magic
+            of quotes. We believe in the power of quotes to entertain, inspire, and connect people, and we are proud
+            to provide our community with a platform to experience this magic. We are constantly working to expand
+            our quote selection, improve the technology on our website, and create an atmosphere that feels like a
+            second home for our visitors.
             <br>
             <br>
-            <h3>Vores Dedikerede Team</h3>
-            Bag Quotopia er et dedikeret hold af passionerede fagfolk, der brænder for citater og viden.
-            Vores medarbejdere er her for at sikre, at din læseoplevelse er enestående. Fra vores enkle, men
-            indholdsrig hjemmeside til vores teknikere, der arbejder bag skærmene, fokuserer vi alle på at levere det
-            bedste
-            mulige websted for vores læsere.
+            <h3>Our Dedicated Team</h3>
+            Behind Quotopia is a dedicated team of passionate professionals who are passionate about quotes and
+            knowledge. Our staff is here to ensure that your reading experience is outstanding. From our simple but
+            content-rich website to our technicians working behind the screens, we all focus on delivering the best
+            possible site for our readers.
             <br>
             <br>
-            <h3>Bliv En Af Os</h3>
-            Vi inviterer dig til at træde ind i vores Quotopia og være en del af vores historie. Uanset om du er en
-            hyppig gæst
-            eller besøger os for første gang, er du en del af Quotopia-familien. Tak fordi du har valgt os til dine
-            citatoplevelser, og vi ser frem til at skabe uforglemmelige øjeblikke sammen med dig.
+            <h3>Become One of Us</h3>
+            We invite you to step into our Quotopia and be a part of our history. Whether you are a frequent visitor
+            or visiting us for the first time, you are a part of the Quotopia family. Thank you for choosing us for
+            your quote experiences, and we look forward to creating unforgettable moments together with you.
             <br>
             <br>
-            <h3>Velkommen til Quotopia - hvor citaternes magi bliver levende!</h3>
+            <h3>Welcome to Quotopia - where the magic of quotes comes to life!</h3>
             <br>
         </div>
 
 
     </div>
+</section>
+
+<section>
+    <h3> contact</h3>
+
+
 </section>
 
 <footer class="footer">

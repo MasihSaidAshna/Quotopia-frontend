@@ -79,7 +79,8 @@ function updateNavigationBar(isLoggedIn) {
     if (isLoggedIn) {
         // User is logged in, update the navigation bar
         rightNavLinks.forEach(link => link.style.display = 'none');
-        authLinks.innerHTML = '<li class="nav-item"><a class="nav-link" href="#" style="color: red; font-weight: bolder"  onclick="logoutUser()">Sign Out</a></li>';
+        authLinks.innerHTML = '<li class="nav-item"><a class="nav-link" href="#" style="color: darkred; font-weight: bolder"  ' +
+            'onclick="logoutUser()">Sign Out</a></li>';
         leftNavLinks.forEach(link => link.style.display = 'inline-block');
 
         // Add the new page link for logged-in users
@@ -87,7 +88,8 @@ function updateNavigationBar(isLoggedIn) {
     } else {
         // User is not logged in, restore the original navigation bar
         rightNavLinks.forEach(link => link.style.display = 'inline-block');
-        authLinks.innerHTML = '<li class="nav-item"><a class="nav-link mr-3" data-target="#loginModal" data-toggle="modal" href="#">Login</a></li>' + '<li class="nav-item"><a class="nav-link" data-target="#signupModal" data-toggle="modal" href="#">Sign Up</a></li>'
+        authLinks.innerHTML = '<li class="nav-item"><a class="nav-link mr-3" data-target="#loginModal" data-toggle="modal" href="#">Login</a></li>' +
+            '<li class="nav-item"><a class="nav-link" data-target="#signupModal" data-toggle="modal" href="#">Sign Up</a></li>'
         leftNavLinks.forEach(link => link.style.display = 'none');
 
         // Remove the new page link for non-logged-in users

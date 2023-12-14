@@ -43,6 +43,14 @@
                     <a class="dropdown-item" href="#">Horror</a>
                 </div>
             </li>
+
+        </ul>
+
+
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="about.html" >About</a>
+            </li>
         </ul>
 
         <ul class="navbar-nav mr-auto" id="authLinks">
@@ -53,14 +61,14 @@
             <li class="nav-item">
                 <a class="nav-link" data-target="#signupModal" data-toggle="modal" href="#">Sign Up</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-            </li>
+
         </ul>
 
         <ul class="navbar-nav ml-auto" id="loggedInLinks">
             <!-- This will be populated dynamically when the user is logged in -->
         </ul>
+
+
     </div>
 </nav>
 
@@ -74,7 +82,7 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="loginModalLabel">Login</h5>
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true" class="btn btn-primary" style="font-size: small; font-weight: bold">&times;</span>
                 </button>
             </div>
             <!-- Modal Body - Login Form -->
@@ -106,7 +114,7 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true" class="btn btn-primary" style="font-size: small; font-weight: bold">&times;</span>
                 </button>
             </div>
             <!-- Modal Body - Signup Form -->
