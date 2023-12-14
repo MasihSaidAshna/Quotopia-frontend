@@ -3,14 +3,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         const genres = await fetchAllGenres();
         console.log('Fetched data:', genres);
         populateDropdownWithGenres(genres);
-
-        const dropdownItems = document.querySelectorAll('.dropdown-item');
-        dropdownItems.forEach(item => {
-            item.addEventListener('click', () => {
-                const selectedGenre = item.textContent.trim();
-                navigateToQuotesPage(selectedGenre);
-            });
-        });
     } catch (error) {
         console.error('There was a problem with fetching genres:', error);
     }
@@ -41,24 +33,22 @@ function populateDropdownWithGenres(genres) {
         return;
     }
 
-    function handleGenreItemClick(genre) {
-        return function () {
-            navigateToQuotesPage(genre.genreName);
-        };
-    }
-
     genres.forEach(genre => {
         const genreItem = document.createElement('div');
         genreItem.classList.add('dropdown-item');
         genreItem.textContent = genre.genreName;
 
-        genreItem.addEventListener('click', handleGenreItemClick(genre));
+        genreItem.addEventListener('click', () => {
+            navigateToQuotesPage(genre.genreID); // Directly navigate on dropdown item click
+        });
 
         genreDropdown.appendChild(genreItem);
     });
 }
 
-function navigateToQuotesPage(genre) {
-    window.location.href = `Category.html?genre=${encodeURIComponent(genre)}`;
+function navigateToQuotesPage(genreID) {
+    const URLQuoteByGenre = `http://localhost:8080/api/quote/byGenre?genreID=${encodeURIComponent(genreID)}`;
+    window.location.href = `Category.html?genreID=${encodeURIComponent(genreID)}`;
 }
+
 
