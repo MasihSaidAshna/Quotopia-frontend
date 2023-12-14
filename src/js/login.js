@@ -26,11 +26,18 @@ document.addEventListener("DOMContentLoaded", function () {
 function loginUser(username, password) {
     // Make a fetch request to your login endpoint
     fetch('http://localhost:8080/login', {
-        method: 'POST', headers: {
+        method: 'POST',
+        headers: {
             'Content-Type': 'application/json',
-        }, body: JSON.stringify({username, password}),
+        },
+        body: JSON.stringify({username, password}),
     })
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Login failed with status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
             // Handle the response, e.g., save the token to local storage
             console.log('Login successful:', data);
@@ -41,17 +48,20 @@ function loginUser(username, password) {
             // Update the navigation bar after login
             updateNavigationBar(true);
         })
-        .catch(error => console.error('Login failed:', error));
-    alert('Login failed. Please check your username and password.');
+        .catch(error => {
+            console.error('Login failed:', error.message);
+            alert('Login failed. Please check your username and password.');
+        });
 }
 
 function signupUser(username, password) {
-    const authToken = localStorage.getItem('token');
-
+    // Remove the Authorization header, as it's not needed for signup
     fetch('http://localhost:8080/signup', {
-        method: 'POST', headers: {
-            'Content-Type': 'application/json', 'Authorization': 'Bearer ' + authToken,
-        }, body: JSON.stringify({username, password}),
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({username, password}),
     })
         .then(response => {
             if (!response.ok) {
@@ -61,13 +71,18 @@ function signupUser(username, password) {
         })
         .then(data => {
             console.log('Signup successful:', data);
+
+            // Show a success message using a popup (you can customize this)
+            alert('Signup successful!');
+
+            // Close the signup modal (assuming you have a modal)
             $('#signupModal').modal('hide');
+
             // Update the navigation bar after signup
             updateNavigationBar(true);
         })
         .catch(error => console.error('Signup failed:', error.message));
 }
-
 function updateNavigationBar(isLoggedIn) {
     // Update the navigation bar based on the user's logged-in state
     const rightNavLinks = document.querySelectorAll('.navbar-nav.mr-auto li');
