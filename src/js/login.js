@@ -72,17 +72,17 @@ function signupUser(username, password) {
         .then(data => {
             console.log('Signup successful:', data);
 
-            // Show a success message using a popup (you can customize this)
             alert('Signup successful!');
 
-            // Close the signup modal (assuming you have a modal)
             $('#signupModal').modal('hide');
 
-            // Update the navigation bar after signup
             updateNavigationBar(true);
+
+            logoutUser();
         })
         .catch(error => console.error('Signup failed:', error.message));
 }
+
 function updateNavigationBar(isLoggedIn) {
     // Update the navigation bar based on the user's logged-in state
     const rightNavLinks = document.querySelectorAll('.navbar-nav.mr-auto li');
