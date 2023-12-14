@@ -2,62 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Quotes</title>
+  <title>Category Quotes</title>
+
+  <!-- Your CSS files or styles can be linked here -->
 </head>
 <body>
 
-<div class="quotes-list">
-  <h1>Quotes for Genre</h1>
-  <ul id="quotes">
-    <!-- Quotes for the selected genre will be populated here -->
-  </ul>
+<div class="category-quotes">
+  <h1 id="categoryName">Category Quotes</h1>
+  <div id="quotesContainer">
+    <!-- Quotes for the selected category will be populated here -->
+  </div>
 </div>
 
-<script>
-  async function fetchQuotesByGenre(genre) {
-    const URLQuoteByGenre = `http://localhost:8080/api/byGenre?genre=${encodeURIComponent(genre)}`;
-
-    try {
-      const response = await fetch(URLQuoteByGenre);
-      if (!response.ok) {
-        throw new Error('Failed to fetch quotes. Status: ' + response.status);
-      }
-      const data = await response.json();
-      return data || [];
-    } catch (error) {
-      console.error('There was a problem fetching quotes by genre:', error);
-      return [];
-    }
-  }
-
-  document.addEventListener('DOMContentLoaded', async () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const selectedGenre = urlParams.get('genre');
-    if (!selectedGenre) {
-      console.error('No genre selected');
-      return;
-    }
-
-    try {
-      const quotes = await fetchQuotesByGenre(selectedGenre);
-
-      const quotesList = document.getElementById('quotes');
-      if (quotes && Array.isArray(quotes)) {
-        quotes.forEach(quote => {
-          const li = document.createElement('li');
-          li.textContent = quote.text; // Replace 'text' with the property name containing quote text
-          quotesList.appendChild(li);
-        });
-      } else {
-        const li = document.createElement('li');
-        li.textContent = 'No quotes available for this genre';
-        quotesList.appendChild(li);
-      }
-    } catch (error) {
-      console.error('Error fetching quotes:', error);
-    }
-  });
-</script>
+<script src="../js/qoutesByCategory.js"></script>
 
 </body>
 </html>
