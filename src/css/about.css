@@ -54,6 +54,7 @@ body {
     color: white;
     font-size: 20px;
 }
+
 .main-quote {
     font-size: 1.8rem;
     margin-bottom: 20px; /* Increased margin between main quote and navbar */
@@ -141,5 +142,11 @@ body {
 }
 
 
+h3 {
+    color: #1062b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
