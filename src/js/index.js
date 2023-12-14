@@ -46,9 +46,9 @@ window.onload = function() {
         const rows = quotes.map(quote => {
             return `
                 <tr>
-                    <td>${quote.quoteID}</td>
-                    <td>${quote.quoteText}</td>
-                    <td>${quote.author ? quote.author.authorName : ''}</td> 
+                    <td style="color: white">${quote.quoteID}</td>
+                    <td style="color: white">${quote.quoteText}</td>
+                    <td style="color: white">${quote.author ? quote.author.authorName : ''}</td> 
                 </tr>
             `;
         });
@@ -64,8 +64,8 @@ window.onload = function() {
         const rows = genres.map(genre => {
             return `
                 <tr>
-                    <td>${genre.genreID}</td>
-                    <td>${genre.genreName}</td>
+                    <td style="color: #1062b4">${genre.genreID}</td>
+                    <td style="color: #1062b4">${genre.genreName}</td>
                 </tr>
             `;
         });
