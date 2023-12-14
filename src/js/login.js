@@ -61,6 +61,7 @@ function signupUser(username, password) {
         })
         .then(data => {
             console.log('Signup successful:', data);
+            $('#signupModal').modal('hide');
             // Update the navigation bar after signup
             updateNavigationBar(true);
         })
