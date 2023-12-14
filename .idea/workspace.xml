@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3663a3f-0f83-432a-9e74-2fa9523a8405" name="Changes" comment="login &#10;og singup lavet">
-      <change beforePath="$PROJECT_DIR$/src/css/aboutus.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/about.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/newquotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/newquotes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/pagination-authors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/pagination-genres.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/pagination-quotes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -34,6 +33,13 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -58,6 +64,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.general",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -84,6 +91,7 @@
       <workItem from="1701428662830" duration="614000" />
       <workItem from="1701430136797" duration="746000" />
       <workItem from="1702492380576" duration="10535000" />
+      <workItem from="1702577835400" duration="3165000" />
     </task>
     <task id="LOCAL-00001" summary="fetch">
       <created>1701182483813</created>
