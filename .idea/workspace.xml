@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3663a3f-0f83-432a-9e74-2fa9523a8405" name="Changes" comment="about">
+      <change afterPath="$PROJECT_DIR$/src/js/newQuotes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/newQuotes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/newQuotes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/mostLikedQuotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/mostLikedQuotes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/newquotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/newQuotes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/edit.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -243,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702600142513</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="about">
+      <option name="closed" value="true" />
+      <created>1702600706942</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1702600706942</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
