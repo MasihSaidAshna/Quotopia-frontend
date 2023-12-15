@@ -1,41 +1,24 @@
 window.onload = function () {
-    const API_ENDPOINT = 'http://localhost:8080/api/quote';
+    const API_ENDPOINT = 'http://localhost:8080/api/quote/newestQuotes';
     const PAGE_SIZE = 10;
-    let sortColumn = 'quoteText'; // Default sort column
+    let sortColumn = 'quoteText';
     let sortDirection = 'asc';
     let currentPage = 0;
 
-    const tblRows = document.getElementById('tbl-rows');
+    const tblRows = document.getElementById('quote-table-body');
     const paginationElement = document.getElementById('pagination');
-
-    document.getElementById('header-row').onclick = function (evt) {
-        const id = evt.target.id;
-        if (id.startsWith('sort-')) {
-            // Update sort column and direction
-            sortColumn = id.substring(5);
-            sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
-            fetchData(currentPage);
-        }
-    };
-
-    document.querySelector('#pagination').onclick = function (evt) {
-        evt.preventDefault();
-        if (evt.target.tagName === 'A' && evt.target.hasAttribute('data-page')) {
-            const page = parseInt(evt.target.getAttribute('data-page'));
-            currentPage = page;
-            fetchData(page);
-        }
-    };
 
     async function fetchData(page = 0) {
         const data = await fetch(`${API_ENDPOINT}?page=${page}&size=${PAGE_SIZE}&sort=${sortColumn},${sortDirection}`)
             .then(response => response.json())
+            .catch(error => console.error('Error fetching data:', error));
+
         displayData(data.content);
         displayPagination(data.totalPages, page);
     }
 
     function displayData(quotes) {
-        tblRows.innerHTML = quotes.map(quote => `<tr><td>${quote.author}</td><td>${quote.quoteText}</td></tr>`).join('');
+        tblRows.innerHTML = quotes.map(quote => `<tr><td>${quote.quoteID}</td><td>${quote.quoteText}</td><td>${quote.author ? quote.author.authorName : ''}</td></tr>`).join('');
     }
 
     function displayPagination(totalPages, currentPage) {
@@ -59,6 +42,24 @@ window.onload = function () {
         }
         paginationElement.innerHTML = paginationHtml;
     }
+
+    document.getElementById('header-row').onclick = function (evt) {
+        const id = evt.target.id;
+        if (id.startsWith('sort-')) {
+            sortColumn = id.substring(5);
+            sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+            fetchData(currentPage);
+        }
+    };
+
+    document.querySelector('#pagination').onclick = function (evt) {
+        evt.preventDefault();
+        if (evt.target.tagName === 'A' && evt.target.hasAttribute('data-page')) {
+            const page = parseInt(evt.target.getAttribute('data-page'));
+            currentPage = page;
+            fetchData(page);
+        }
+    };
 
     fetchData(); // Initial call to the backend
 };
