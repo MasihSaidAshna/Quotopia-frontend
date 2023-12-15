@@ -40,29 +40,18 @@ function displayQuotes(categoryName, quotes) {
     }
 
     // Update category name in the h1 element
-    categoryNameElement.textContent = `${categoryName} Quotes`;
+    categoryNameElement.textContent = categoryName;
 
-    const quotesList = document.createElement('ul');
-    quotes.forEach(quote => {
-        const listItem = document.createElement('li');
+    quotes.forEach((quote, index) => {
+        // Add extra space between quotes except for the last one
+        const spaceBetween = index < quotes.length - 1 ? '<br><br>' : '';
 
-        const quoteText = document.createElement('p');
-        quoteText.textContent = `Quote: ${quote.quoteText}`;
+        const quoteText = `<p>Quote: ${quote.quoteText}</p>`;
+        const authorInfo = `<p>Author: ${quote.author.authorName}</p>`;
+        const genreInfo = `<p>Genre: ${quote.genre.genreName}</p>`;
 
-        const authorInfo = document.createElement('p');
-        authorInfo.textContent = `Author: ${quote.author.authorName}`;
-
-        const genreInfo = document.createElement('p');
-        genreInfo.textContent = `Genre: ${quote.genre.genreName}`;
-
-        listItem.appendChild(quoteText);
-        listItem.appendChild(authorInfo);
-        listItem.appendChild(genreInfo);
-
-        quotesList.appendChild(listItem);
+        quotesContainer.innerHTML += `${quoteText}${authorInfo}${genreInfo}${spaceBetween}`;
     });
-
-    quotesContainer.appendChild(quotesList);
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
