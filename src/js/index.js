@@ -1,6 +1,6 @@
-window.onload = function() {
+window.onload = function () {
     const URLQuote = "http://localhost:8080/api/quote";
-    const URLGenre = "http://localhost:8080/api/ ";
+    const URLGenre = "http://localhost:8080/api/genre";
 
     // Function to fetch quotes and populate the table
     function fetchAndPopulateQuotes() {
